@@ -33,6 +33,7 @@ int	main(void)
 	struct node	*ptr;
 
 	head = del_first(head);
+	ptr = head;
 	while (ptr != NULL)
 	{
 		printf("%d\n", ptr->data);
