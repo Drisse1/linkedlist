@@ -22,6 +22,7 @@ struct node	*del_first(struct node *head)
 		temp = head;
 		head = head->link;
 		free(temp);
+		temp = NULL;
 	}
 	return (head);
 }
