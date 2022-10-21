@@ -31,7 +31,18 @@ int	main(void)
 {
 	struct node	*head;
 	struct node	*ptr;
+	struct node	*current;
+	struct node	*current2;
 
+	head = malloc(sizeof(struct node));
+	current = malloc(sizeof(struct node));
+	current2 = malloc(sizeof(struct node));
+	head->data = 45;
+	current->data = 98;
+	head->link = current;
+	current2->data = 3;
+	current->link = current2;
+	current2->link = NULL;
 	head = del_first(head);
 	ptr = head;
 	while (ptr != NULL)
